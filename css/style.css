@@ -1,0 +1,52 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(31, 29, 29),rgb(31, 29, 29));
+    background-size: 40% 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: 100%;
+    padding-top: 20px;
+}
+
+.content_header {
+    display: flex;
+    align-items: center;
+}
+
+.content_header.img_moon_river_header {
+    display: flex;
+    align-content: end;
+}
+
+.content_header .buttons {
+    margin-left: auto;
+}
+
+main {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}
+
+main .ring_collection {
+    height: 170px;
+    display: flex;
+    margin-left: 40%;
+    align-items: end;
+}
+
+.ring_collection img {
+    margin-left: 20px;
+}
+
+.header p {
+    margin-left: 70%;
+}

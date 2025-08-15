@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>MOON RIVER</title>
 </head>
 <body>
@@ -13,27 +14,29 @@
                 <a href="/"><img class="Moon_river_header_img" src="/images/Group 1 1.svg"></a>
             </div>    
             <div class="buttons">
-                <button type="button" class="heart">1</button>
-                <button type="button" class="manikin">2</button>
-                <button type="button" class="lock">3</button>
+                <i class='bx bx-heart' style='color:#ffffff' ></i>
+                <i class='bx bx-user' style='color:#ffffff' ></i>
+                <i class='bx bx-lock-alt' style='color:#ffffff' ></i>
             </div>
             <div class="burger">
-                12
+                <input id="burger-toggle" type="checkbox">
+                <label for="burger-toggle">
+                    <span></span>
+                </label>
             </div>
         </div>
         <main class="main">
             <div class="ring_collection">
-                <a href="/"> Смотреть коллекцию</a>
+                <a href="/">———————— Смотреть коллекцию</a>
                 <img src="https://live.verstaem.online/moon-river/img/hero@1.png" alt="КОЛЬЦО TRINITY, Cartier">
             </div>
         </main>
         <div class="description">
             <p><img src="/images/КОЛЬЦО TRINITY, Cartier.png" alt="КОЛЬЦО TRINITY, Cartier"></p>
             <p><img src="/images/Белое золото, бриллианты-1.png" alt="Белое золото, бриллианты-1"></p>
-            <p><img src="/images/498 000 ₽-1.png" alt="Цена кольца"></p>
+            <p><img class="cost" src="/images/498 000 ₽-1.png" alt="Цена кольца"></p>
         </div>
     </header>
 
 </body>
-
 </html>

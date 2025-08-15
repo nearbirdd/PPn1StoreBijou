@@ -1,23 +1,25 @@
 html{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 body {
     height: 100%;
     background-image: linear-gradient(to right, rgb(31, 29, 29),rgb(31, 29, 29));
-    background-size: 40% 100%;
-    background-position: 100% 100%;
+    background-size: 40% 95%;
+    background-position: 100% 1%;
     background-repeat: no-repeat;
 }
 
 .header {
-    height: 100%;
+    height: 95%;
     padding-top: 20px;
 }
 
 .content_header {
     display: flex;
     align-items: center;
+    margin-inline: 195px;
+    padding-top: 2.3%;
 }
 
 .content_header.img_moon_river_header {
@@ -25,28 +27,120 @@ body {
     align-content: end;
 }
 
-.content_header .buttons {
+.header .buttons {
     margin-left: auto;
 }
 
+.buttons {
+    margin-right: 6%;
+}
+
+.buttons i {
+    width: 40px;
+    font-size: 27px;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+label {
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 30px;
+}
+
+label span {
+    top: 11.4px;
+}
+
+label::after, label::before, label span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+}
+
+label::before {
+    content: "";
+    top: 3px;
+}
+
+label::after {
+    content: "";
+    bottom: 3px;
+}
+
+#burger-toggle:checked ~ label::after {
+    transform: rotate(45deg);
+    bottom: 10px;
+}
+
+#burger-toggle:checked ~ label::before {
+    transform: rotate(-45deg);
+    top: 12px;
+}
+
+#burger-toggle:checked ~ label span {
+    transform: rotate(-45deg);
+    top: 12px;
+}
+
+#burger-toggle:hover ~ label::after {
+    bottom: 0px;
+}
+
+#burger-toggle:hover ~ label::before {
+    top: 0px;
+}
+
+
 main {
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
-    align-items: end;
+    justify-content: center;
 }
 
 main .ring_collection {
     height: 170px;
     display: flex;
-    margin-left: 40%;
+    margin-right: 5.5%;
+    margin-top: 12.8%;
     align-items: end;
 }
 
 .ring_collection img {
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
-.header p {
-    margin-left: 70%;
+.ring_collection a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 300px;
+    color: gray;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.ring_collection a:hover{
+    color: rgb(70, 69, 69);
+}
+
+.description {
+    flex-direction: column;
+    justify-items: end;
+    align-content: end;
+    margin-top: 105px;
+    margin-right: 10.4%;
+}
+
+.description p {
+    margin: 0;
+}
+
+.description .cost {
+    margin-top: 10px;
 }

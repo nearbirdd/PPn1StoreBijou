@@ -11,7 +11,6 @@ body {
 }
 
 .header {
-    height: 95%;
     padding-top: 20px;
 }
 
@@ -29,6 +28,10 @@ body {
 
 .header .buttons {
     margin-left: auto;
+}
+
+.buttons:hover {
+    cursor:pointer;
 }
 
 .buttons {
@@ -53,6 +56,18 @@ label {
 
 label span {
     top: 11.4px;
+}
+
+.burger input, label:hover {
+    cursor: pointer;
+}
+
+#burger-toggle:hover ~ label::after {
+    bottom: 0px;
+}
+
+#burger-toggle:hover ~ label::before {
+    top: 0px;
 }
 
 label::after, label::before, label span {
@@ -88,15 +103,6 @@ label::after {
     top: 12px;
 }
 
-#burger-toggle:hover ~ label::after {
-    bottom: 0px;
-}
-
-#burger-toggle:hover ~ label::before {
-    top: 0px;
-}
-
-
 main {
     width: 100%;
     height: 60%;
@@ -130,17 +136,42 @@ main .ring_collection {
 }
 
 .description {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 195px;
+    margin-top: 12.7%;
+}
+
+.description .lang {
+    display: flex;
+    align-items: end;
+}
+
+.description .price {
+    display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    justify-items: end;
-    align-content: end;
-    margin-top: 105px;
-    margin-right: 10.4%;
 }
 
-.description p {
-    margin: 0;
+.description .price p {
+    margin: 0px;
 }
 
-.description .cost {
+.description .price .cost {
     margin-top: 10px;
+}
+
+.description .lang a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 300px;
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
+.lang a:hover {
+    color: rgb(70, 69, 69);
+    cursor: pointer;
 }

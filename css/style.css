@@ -1,7 +1,9 @@
 html{
     width: 100%;
     height: 100vh;
+    /* background-color: gray; */
 }
+
 body {
     height: 100%;
     background-image: linear-gradient(to right, rgb(31, 29, 29),rgb(31, 29, 29));
@@ -103,14 +105,14 @@ label::after {
     top: 12px;
 }
 
-main {
+.main {
     width: 100%;
     height: 60%;
     display: flex;
     justify-content: center;
 }
 
-main .ring_collection {
+.main .ring_collection {
     height: 170px;
     display: flex;
     margin-right: 5.5%;
@@ -174,4 +176,67 @@ main .ring_collection {
 .lang a:hover {
     color: rgb(70, 69, 69);
     cursor: pointer;
+}
+
+.male_female {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4.6%;
+    margin-inline: 11.3%;
+}
+
+.male_female :where(.male, .female) {
+    background: rgb(46, 46, 46);
+    height: 587px;
+}
+
+.male_female :where(.male, .female) img {
+    opacity: 0.6;
+}
+
+.male, .female {
+    position: relative;
+}
+
+.male .male_page, .female .female_page {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    margin-left: -12%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: lighter;
+    color: white;
+}
+
+.male .for_man, .female .for_female {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    margin-left: -17%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: lighter;
+    color: white;
+}
+
+.male .dash, .female .dash_female {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: lighter;
+    color: white;
+}
+
+.map_section {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    background-color: rgb(31, 29, 29);
 }

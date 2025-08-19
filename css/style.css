@@ -5,10 +5,12 @@ html{
 }
 
 body {
+    width: 100%;
+    overflow-x: hidden;
     height: 100%;
     background-image: linear-gradient(to right, rgb(31, 29, 29),rgb(31, 29, 29));
-    background-size: 40% 95%;
-    background-position: 100% 1%;
+    background-size: 45% 95%;
+    background-position: 109.69% 1%;
     background-repeat: no-repeat;
 }
 
@@ -181,8 +183,8 @@ label::after {
 .male_female {
     display: flex;
     justify-content: space-around;
-    margin-top: 4.6%;
-    margin-inline: 11.3%;
+    margin-top: 4.3%;
+    margin-inline: 11.7%;
 }
 
 .male_female :where(.male, .female) {
@@ -235,7 +237,6 @@ label::after {
 }
 
 .map_section {
-    width: 100%;
     height: 600px;
     margin-top: 20px;
     background-color: rgb(31, 29, 29);

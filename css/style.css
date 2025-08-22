@@ -280,6 +280,12 @@ label::after {
     border: none;
     border-bottom: 2px solid white;
     background-color: rgb(31, 29, 29);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    outline: none;
 }
 
 .input_city {

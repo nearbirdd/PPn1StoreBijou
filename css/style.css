@@ -71,7 +71,7 @@ label span {
 }
 
 #burger-toggle:hover ~ label::before {
-    top: 0px;
+    top: 1px;
 }
 
 label::after, label::before, label span {
@@ -79,7 +79,7 @@ label::after, label::before, label span {
     width: 100%;
     height: 2px;
     background-color: white;
-    transition: .3s;
+    transition: .2s;
 }
 
 label::before {
@@ -89,7 +89,7 @@ label::before {
 
 label::after {
     content: "";
-    bottom: 3px;
+    bottom: 2px;
 }
 
 #burger-toggle:checked ~ label::after {
@@ -237,7 +237,87 @@ label::after {
 }
 
 .map_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 600px;
     margin-top: 20px;
     background-color: rgb(31, 29, 29);
+}
+
+.search_shop {
+    margin-left: 200px;
+}
+
+.search_shop p{
+    margin: 0;
+}
+
+.search_shop h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.search_shop h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.search_shop .input_adds {
+    width: 400px;
+    height: 30px;
+    padding: 10px 10px 10px 0px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: rgb(31, 29, 29);
+}
+
+.input_city {
+    position: relative;
+    margin-top: 20px;
+}
+
+.input_city i{
+    position: absolute;
+    left: 390px;
+    top: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+.input_city i:hover {
+    left: 395px;
+}
+
+.map {
+    margin-right: 115px;
+    width: 710px;
+    height: 600px;
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+#map {
+    filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(0.8);
+}
+
+#map img {
+    filter: invert(1) hue-rotate(180deg);
 }

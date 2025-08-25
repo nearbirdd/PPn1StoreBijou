@@ -313,7 +313,7 @@ label::after {
 }
 
 [class*="copyrights-pane"] {
-  display: none !important;
+    display: none !important;
 }
 
 [class*="ground-pane"] {
@@ -327,3 +327,63 @@ label::after {
 #map img {
     filter: invert(1) hue-rotate(180deg);
 }
+
+.moreProducts {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.rings {
+    margin-left: 11.5%;
+}
+
+.earring {
+    margin-right: 11.5%;
+}
+
+.firstRing,
+.secondRing,
+.firstEarring,
+.secondEarring {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.informationFirstRing, 
+.informationSecondRing,
+.informationFirstEarring,
+.informationSecondEarring {
+    position: absolute;
+    left: 8%;
+    top: 65%;
+}
+
+.moreProducts h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.moreProducts p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(190, 189, 189);
+    margin-top: 6px;
+}
+
+.chokerWooman {
+    position: relative;
+}
+
+.informationChokerWooman {
+    position:absolute;
+    left: 5%;
+    top: 80%;
+}
+

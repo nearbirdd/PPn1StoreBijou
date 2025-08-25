@@ -345,11 +345,14 @@ label::after {
 }
 
 .firstRing,
+.firstEarring {
+    position: relative;
+    margin-bottom: 3.5%;
+}
+
 .secondRing,
-.firstEarring,
 .secondEarring {
     position: relative;
-    margin-bottom: 5%;
 }
 
 .informationFirstRing, 
@@ -357,8 +360,8 @@ label::after {
 .informationFirstEarring,
 .informationSecondEarring {
     position: absolute;
-    left: 8%;
-    top: 65%;
+    left: 7%;
+    top: 70%;
 }
 
 .moreProducts h2 {
@@ -384,6 +387,14 @@ label::after {
 .informationChokerWooman {
     position:absolute;
     left: 5%;
-    top: 80%;
+    top: 85%;
 }
 
+.movingPortfolio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6px;
+    height: 600px;
+    background-color: rgb(31, 29, 29);
+}

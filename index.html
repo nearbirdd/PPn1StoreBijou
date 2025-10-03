@@ -11,7 +11,7 @@
     <header class="header">
         <div class="content_header">
             <div class="img_moon_river_header">
-                <a href="/"><img class="Moon_river_header_img" src="/images/Group 1 1.svg"></a>
+                <a href="/"><img class="Moon_river_header_img" src="images/Group 1 1.svg"></a>
             </div>    
             <div class="buttons">
                 <i class='bx bx-heart' style='color:#ffffff' ></i>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="lang">
+        <div class="lang">
                 <a>RU</a>
                 <a>EN</a>
             </div>
@@ -73,7 +73,6 @@
             </div>
             <div id="map" class="map">
                 <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-                <script src="js/script.js"></script>
             </div>
         </div>
         <div class="moreProducts">
@@ -131,15 +130,12 @@
                 <h2>
                     Мы в социальных сетях
                 </h2>
-            <div class="slider"></div>
-            <button class="prev">
-                <box-icon name='arrow-back' color='#ffffff' ></box-icon>
-            </button>
-            <button class="next">
-                <box-icon name='arrow-back' rotate='180' color='#ffffff' ></box-icon>
-            </button>
             </div>
+            <div class="slider" data-slider="data-slider"></div>
+            <button class="prev" data-btn-prev="data-btn-prev"><box-icon name='left-arrow-alt' color='#ffffff' ></box-icon></button>
+            <button class="next" data-btn-next="data-btn-next"><box-icon name='right-arrow-alt' color='#ffffff' ></box-icon></button>
         </div>
     </section>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

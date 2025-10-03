@@ -391,10 +391,16 @@ label::after {
 }
 
 .movingPortfolio {
+    position: relative;
+    width: 800px;
+    margin: 0 15px;
+}
+
+.slider {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 6px;
-    height: 600px;
-    background-color: rgb(31, 29, 29);
+}
+
+.imageclass {
+    min-width: 100%;
+    object-fit: cover;
 }
